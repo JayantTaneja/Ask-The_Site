@@ -30,7 +30,7 @@ with st.form("Crawl"):
         empty_error(base_url, "URL")
         generate_sitemap(base_url, filter, excluded)
         pages = extract_text("output_sitemap.xml")
-        # embed(pages)
+        embed(pages)
         st.session_state.db_generated = True
 
 if "db_generated" in st.session_state.keys():
