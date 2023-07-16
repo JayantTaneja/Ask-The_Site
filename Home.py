@@ -39,7 +39,7 @@ over which you can query.
 ##### 2. Load your own site
             
 **Step 1**: Head over to 
-[![img](https://img.shields.io/badge/Create_vector_DB-blue)](Create_vector_DB)
+[![img](https://img.shields.io/badge/Create_vector_DB-blue)](Create_Vector_DB)
 
 - Enter your API key in the sidebar
 - Type the url of the site you want to use (example : karpathy.ai)
