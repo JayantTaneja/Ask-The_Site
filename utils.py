@@ -47,9 +47,7 @@ def load_chain():
     '''
     Loads LangChain's ```RetrievalQAWithSourcesChain``` into session state
     '''
-    if 'vectordb' not in st.session_state.keys():
-        load_vector_db()
-    
+   
     st.session_state.chain = RetrievalQAWithSourcesChain.from_chain_type(
         ChatOpenAI(
             temperature=0, 
@@ -93,7 +91,6 @@ def key_setter():
                     st.stop()
                 st.session_state.key = key
                 st.success("Key set successfully !")
-                # load_chain()
 
 def empty_error(var:str, object_name:str):
     '''
