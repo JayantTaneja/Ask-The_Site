@@ -38,9 +38,6 @@ def load_vector_db(path_to_db = "embeddings"):
         path_to_db : (str) Path to folder containing ChromaDB embeddings
     '''
 
-    if 'embeddings' not in st.session_state.keys():
-        load_embedding_function()
-
     st.session_state.vectordb = Chroma(
         persist_directory=path_to_db, 
         embedding_function=st.session_state.embeddings
@@ -300,17 +297,10 @@ def db_uploader():
 
 #---------------------LLM Prompting And DB Search-----------------------------
 
-def ask(question:str):
+def ask(question:str, base_prompt:str = ""):
     
     load_chain()
 
-    # base_prompt = '''
-    # You are an AI assistant tasked with helping the user get relevent information present in the website
-    # www.jcboseust.ac.in/computer_new, the website of J.C. Bose University Of Science And Technology, YMCA. 
-    # Try finding the answer before giving up
-    # Here's the query to be answered:
-    # '''
-    base_prompt = ""
     prompt = {
         "question" : base_prompt + question
     }
@@ -321,7 +311,6 @@ def ask(question:str):
         st.error("Authentication Error, check your API key")
         st.stop()
 
-    # st.write(response)
     result = {
         "Answer" : response["answer"],
         "Links" : [i.strip() for i in response["sources"].split('\n-')]
