@@ -116,12 +116,3 @@ def crawl(
 				file.write("\n\t\t<url>\n\t\t\t<loc>\n\t\t\t\t{0}/{1}\n\t\t\t</loc>\n\t\t</url>".format(url, link))
 
 		file.write('</urlset>')
-
-if __name__ == "__main__":
-	# url = "https://www.jcboseust.ac.in/computer_new"
-	# filter = "computer_new"
-	# url = "https://karpathy.ai"
-	url = "https://karpathy.github.io/about/"
-	filter = ""
-	exclude = "pdf"
-	crawl(url, filter, exclude)
