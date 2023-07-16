@@ -1,5 +1,13 @@
 import streamlit as st
-from utils import key_setter, setup_error, empty_error, display_message, vector_search, ask
+from utils import (
+    key_setter, 
+    setup_error, 
+    empty_error, 
+    display_message,
+    load_vector_db, 
+    vector_search, 
+    ask
+)
 
 st.set_page_config(
     page_title= "Demo",
@@ -62,9 +70,17 @@ with st.form("chatbot"):
     if submit:
         setup_error('key', "API Key not found")
         empty_error(query, "query")
+        load_vector_db("embeddings")
+
+        base_prompt = '''
+            You are an AI assistant tasked with helping the user get relevent information present in the website
+            www.jcboseust.ac.in/computer_new, the website of J.C. Bose University Of Science And Technology, YMCA. 
+            Try finding the answer before giving up
+            Here's the query to be answered:
+        '''
 
         with st.spinner("Fetching Results"):
-            result = ask(query)
+            result = ask(query, base_prompt)
         
         with st.chat_message("assistant"):
             display_message(result["Answer"])

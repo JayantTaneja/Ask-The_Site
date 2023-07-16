@@ -67,6 +67,7 @@ with st.form("chatbot"):
     if submit:
         setup_error('key', "API Key not found")
         empty_error(query, "query")
+        load_vector_db(path_to_db="temp-uploaded")
 
         with st.spinner("Fetching Results"):
             result = ask(query)
