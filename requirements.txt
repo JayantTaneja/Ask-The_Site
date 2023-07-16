@@ -3,3 +3,4 @@ openai
 chromadb
 requests
 xmltodict
+beautifulsoup4
