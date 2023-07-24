@@ -317,6 +317,9 @@ def ask(question:str, base_prompt:str = ""):
 
 
 def vector_search(query:str):
+    if 'embeddings' not in st.session_state.keys():
+        load_embedding_function()
+
     if 'vectordb' not in st.session_state.keys():
         load_vector_db()
     
