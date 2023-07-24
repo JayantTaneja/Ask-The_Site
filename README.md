@@ -11,6 +11,24 @@ A LangChain Powered app to query the contents of your website.
 Head over to the home page in the web app and follow the instructions
 
 
+#### Preloaded Vector DB Demo
+
+https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/257ee581-9d9b-42e8-ae4f-d66c050d0c3e
+
+#### Create your own Vector DB
+
+
+https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/e931074b-af6d-47c0-9f80-b1e111501487
+
+
+#### Query your own vector db
+
+
+
+https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/c1386b30-b3b4-4410-b1d3-d826a29c563b
+
+
+
 ### Features
 
 - Crawls the url specified to generate a sitemap that is subsequently used to extract text data from the relevant webpages on that site
