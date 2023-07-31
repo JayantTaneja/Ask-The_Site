@@ -13,20 +13,17 @@ Head over to the home page in the web app and follow the instructions
 
 #### Preloaded Vector DB Demo
 
-https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/257ee581-9d9b-42e8-ae4f-d66c050d0c3e
+https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/2be8f5c5-6b76-4b55-b273-c76f0ab7d24b
+
 
 #### Create your own Vector DB
 
-
-https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/e931074b-af6d-47c0-9f80-b1e111501487
+https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/245a1c58-7830-49ee-9f64-1f380bd04071
 
 
 #### Query your own vector db
 
-
-
-https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/c1386b30-b3b4-4410-b1d3-d826a29c563b
-
+https://github.com/JayantTaneja/Ask-The_Site/assets/79043865/20977ee0-53db-45bf-9556-eb73ff9e389e
 
 
 ### Features
