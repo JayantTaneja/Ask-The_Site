@@ -23,9 +23,9 @@ key_setter()
 
 st.markdown('''
             
-This page contains demo of 2 main LLM based retrieval methods for websites.
+This page contains a demo of 2 main LLM based retrieval methods for websites.
 The content of www.jcboseust.ac.in/computer_new was embedded in a vector
-databse which can then be used to perform
+database which can then be used to perform
 
 1. Similarity Search
 2. LLM based Natural Language Querying and Response 
